@@ -1,32 +1,24 @@
-# Prerequisites
-*.d
+# Ignorar archivos temporales de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Ignorar entornos virtuales
+venv/
+env/
+.venv/
+.env/
 
-# Precompiled Headers
-*.gch
-*.pch
+# Ignorar archivos de notebooks temporales
+*.ipynb_checkpoints
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Ignorar archivos de IDEs (si no quieres subirlos)
+.vscode/
+.idea/
 
-# Fortran module files
-*.mod
-*.smod
+# Ignorar archivos de configuración locales (si tienes)
+*.env
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# No ignorar los archivos que quieres subir
+# CODEOWNERS, requirements.in, requirements.txt, Makefile, README.md, archivos .py y .ipynb (te los mantengo)
