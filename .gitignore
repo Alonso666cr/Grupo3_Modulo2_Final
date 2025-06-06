@@ -1,24 +1,101 @@
-# Ignorar archivos temporales de Python
+# Archivos específicos de Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# Ignorar entornos virtuales
-venv/
+# Entornos virtuales
+.env
+.venv
 env/
-.venv/
-.env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
-# Ignorar archivos de notebooks temporales
-*.ipynb_checkpoints
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
 
-# Ignorar archivos de IDEs (si no quieres subirlos)
+# IPython
+profile_default/
+ipython_config.py
+
+# Archivos de datos grandes (ajustar según necesidades)
+*.csv
+*.json
+*.pkl
+*.h5
+*.hdf5
+*.parquet
+data/
+datasets/
+models/
+checkpoints/
+
+# Archivos de modelo entrenados
+*.model
+*.pkl
+*.joblib
+*.sav
+
+# Logs y archivos temporales
+*.log
+*.tmp
+*.temp
+
+# Configuraciones del IDE
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# Ignorar archivos de configuración locales (si tienes)
-*.env
+# Archivos de sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# No ignorar los archivos que quieres subir
-# CODEOWNERS, requirements.in, requirements.txt, Makefile, README.md, archivos .py y .ipynb (te los mantengo)
+# Credenciales y configuraciones sensibles
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+config.ini
+secrets.json
+api_keys.txt
+
+# Archivos específicos de ML/AI
+wandb/
+mlruns/
+outputs/
+lightning_logs/
+tensorboard_logs/
+
+# NLTK data (opcional, puedes comentar si quieres incluir nltk_data)
+nltk_data/
+
+# Archivos específicos de Anaconda
+.conda/
+*.conda
