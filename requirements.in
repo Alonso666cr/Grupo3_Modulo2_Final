@@ -1,0 +1,27 @@
+# Requirements para grupo3-modulo2-final.ipynb
+# Basado en las versiones funcionando en tu entorno de Anaconda
+
+# Análisis de datos
+pandas==2.2.2
+numpy==1.26.4
+
+# Machine Learning
+scikit-learn==1.5.1
+
+# Visualización
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# Procesamiento de lenguaje natural
+nltk==3.9.1
+gensim==4.3.3
+
+# LangChain para procesamiento de texto avanzado
+langchain==0.3.25
+
+# Jupyter y herramientas de desarrollo
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Dependencias adicionales
+pip-tools>=6.0.0

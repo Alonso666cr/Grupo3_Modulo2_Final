@@ -1,2 +1,29 @@
-# Asigna todo el proyecto a tu usuario o equipo para que sea responsable de todo
-*        @alonso666cr
+# CODEOWNERS para proyecto grupo3-modulo2-final
+# Define quién puede revisar y aprobar cambios en el repositorio
+
+# El propietario principal del proyecto revisa todos los cambios
+* @alonso666cr
+
+# Archivo principal del proyecto
+grupo3-modulo2-final.ipynb @alonso666cr
+
+# Archivos de Python
+*.py @alonso666cr
+
+# Archivos de configuración críticos
+requirements.in @alonso666cr
+requirements.txt @alonso666cr
+Makefile @alonso666cr
+.gitignore @alonso666cr
+setup_anaconda.bat @alonso666cr
+
+# Documentación
+README.md @alonso666cr
+docs/ @alonso666cr
+
+# Archivos de datos (si los incluyes)
+data/ @alonso666cr
+datasets/ @alonso666cr
+
+# Scripts de utilidades
+check_versions.py @alonso666cr
