@@ -1,29 +1,93 @@
 # CODEOWNERS para proyecto grupo3-modulo2-final
 # Define quién puede revisar y aprobar cambios en el repositorio
+# 
+# 🔒 RESTRICCIONES DE PULL REQUEST ACTIVADAS
+# Para que estas restricciones funcionen automáticamente:
+# 1. Ve a: https://github.com/Alonso666cr/[tu-repositorio]/settings/branches
+# 2. Click "Add rule" para rama "main"
+# 3. Marcar: ☑️ "Require a pull request before merging"
+# 4. Marcar: ☑️ "Require review from CODEOWNERS" ⭐ CRÍTICO
+# 5. Marcar: ☑️ "Require approvals" (mínimo 1)
+#
+# Con esto configurado, TODOS los cambios requerirán aprobación de @Alonso666cr
 
-# El propietario principal del proyecto revisa todos los cambios
-* @alonso666cr
+# ==========================================
+# REGLAS DE PROPIEDAD DEL CÓDIGO
+# ==========================================
 
-# Archivo principal del proyecto
-grupo3-modulo2-final.ipynb @alonso666cr
+# El propietario principal del proyecto revisa TODOS los cambios
+* @Alonso666cr
 
-# Archivos de Python
-*.py @alonso666cr
+# ==========================================
+# ARCHIVOS CRÍTICOS DEL PROYECTO
+# ==========================================
 
-# Archivos de configuración críticos
-requirements.in @alonso666cr
-requirements.txt @alonso666cr
-Makefile @alonso666cr
-.gitignore @alonso666cr
-setup_anaconda.bat @alonso666cr
+# Archivo principal del proyecto - PROTECCIÓN MÁXIMA
+grupo3-modulo2-final.ipynb @Alonso666cr
 
-# Documentación
-README.md @alonso666cr
-docs/ @alonso666cr
+# Scripts de Python - PROTECCIÓN ALTA
+*.py @Alonso666cr
+check_versions.py @Alonso666cr
 
-# Archivos de datos (si los incluyes)
-data/ @alonso666cr
-datasets/ @alonso666cr
+# ==========================================
+# CONFIGURACIÓN Y DEPENDENCIAS - CRÍTICO
+# ==========================================
 
-# Scripts de utilidades
-check_versions.py @alonso666cr
+# Archivos de dependencias - CAMBIOS REQUIEREN REVISIÓN OBLIGATORIA
+requirements.in @Alonso666cr
+requirements.txt @Alonso666cr
+
+# Scripts de configuración - PROTECCIÓN ALTA
+setup_anaconda.bat @Alonso666cr
+Makefile @Alonso666cr
+
+# Control de versiones - PROTECCIÓN ALTA
+.gitignore @Alonso666cr
+
+# ==========================================
+# DOCUMENTACIÓN - PROTECCIÓN MEDIA
+# ==========================================
+
+README.md @Alonso666cr
+docs/ @Alonso666cr
+*.md @Alonso666cr
+
+# ==========================================
+# DATOS Y MODELOS - PROTECCIÓN ALTA
+# ==========================================
+
+# Archivos de datos - REQUIEREN REVISIÓN
+data/ @Alonso666cr
+datasets/ @Alonso666cr
+models/ @Alonso666cr
+*.csv @Alonso666cr
+*.pkl @Alonso666cr
+*.joblib @Alonso666cr
+
+# ==========================================
+# CONFIGURACIONES SENSIBLES - MÁXIMA PROTECCIÓN
+# ==========================================
+
+# Archivos de configuración sensibles
+.env @Alonso666cr
+config.ini @Alonso666cr
+secrets.json @Alonso666cr
+
+# ==========================================
+# NOTA IMPORTANTE PARA COLABORADORES:
+# ==========================================
+# 
+# Con las Branch Protection Rules activadas:
+# ❌ NO se puede hacer push directo a main
+# ❌ NO se puede hacer merge sin aprobación
+# ✅ TODO cambio debe pasar por Pull Request
+# ✅ @Alonso666cr debe aprobar TODOS los cambios
+# ✅ Se bloquean automáticamente merges sin revisión
+#
+# Flujo obligatorio:
+# 1. git checkout -b feature/mi-cambio
+# 2. [hacer cambios]
+# 3. git push origin feature/mi-cambio  
+# 4. Crear Pull Request en GitHub
+# 5. Esperar aprobación de @Alonso666cr
+# 6. Solo entonces se puede hacer merge
