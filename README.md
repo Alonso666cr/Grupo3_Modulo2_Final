@@ -201,10 +201,29 @@ Este proyecto está configurado para ser **100% reproducible**:
 - ✅ Compatible con múltiples plataformas
 
 ## Contribuir
+
+### 🔒 Proceso de Contribución (Con Restricciones de @alonso666cr)
 1. Fork el repositorio
 2. Crea una rama para tu feature: `git checkout -b feature/nueva-funcionalidad`
-3. Los cambios serán revisados según el archivo CODEOWNERS
-4. Envía un Pull Request
+3. Realiza tus cambios y haz commit
+4. Push de tu rama: `git push origin feature/nueva-funcionalidad`
+5. Crea un Pull Request en GitHub
+6. **@alonso666cr debe aprobar** antes del merge (obligatorio)
+7. Solo después de aprobación se puede hacer merge
+
+### ⚙️ Configurar Restricciones de Pull Request
+**IMPORTANTE:** Para activar restricciones automáticas, @alonso666cr debe:
+1. Ir a **Settings** → **Branches** en GitHub
+2. Añadir regla para rama `main`
+3. Marcar **"Require review from CODEOWNERS"**
+4. Esto **bloquea** todos los merges sin aprobación
+
+**Estado actual:** 
+- ✅ CODEOWNERS configurado para @alonso666cr
+- ⚙️ Branch Protection Rules: **Configurar manualmente en GitHub**
+
+**Sin Branch Protection:** CODEOWNERS solo sugiere @alonso666cr como revisor  
+**Con Branch Protection:** **Bloquea** automáticamente merges sin aprobación de @alonso666cr
 
 ## Notas Importantes
 - **Siempre usar Anaconda Prompt** para comandos de instalación
